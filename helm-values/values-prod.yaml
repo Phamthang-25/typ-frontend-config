@@ -1,0 +1,14 @@
+image:
+  repository: thang05/typ-frontend
+  tag: "v1.0.1"
+  pullPolicy: IfNotPresent
+
+service:
+  name: student-frontend
+  port: 80
+
+ingress:
+  enabled: true
+  className: nginx
+  host: student.example.com
+  path: /
