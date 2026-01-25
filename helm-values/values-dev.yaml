@@ -10,5 +10,9 @@ service:
 ingress:
   enabled: true
   className: nginx
-  host: student-dev.local
+  host: app.typ-app.local
   path: /
+  tls:
+    enabled: true
+    secretName: typ-tls-secret
+  annotations: {}
